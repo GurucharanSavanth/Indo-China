@@ -30,7 +30,7 @@ export class CorsError extends AppError {
       source,
       recoverable: true,
       retryable: false,
-      uiMessage: `Live refresh unavailable (CORS) for ${source}. Using snapshot data.`,
+      uiMessage: `Live refresh unavailable (CORS) for ${source}. Displaying pre-fetched WITS data.`,
     });
     this.name = 'CorsError';
   }
@@ -111,7 +111,7 @@ export function errorToBanner(err) {
   if (err instanceof CorsError) return { level: 'warn', text: err.uiMessage, dismissible: true };
   if (err instanceof RateLimitError) return { level: 'info', text: err.uiMessage, dismissible: false };
   if (err instanceof ServerError) return { level: 'warn', text: err.uiMessage, dismissible: true };
-  if (err instanceof NetworkError) return { level: 'error', text: 'You appear to be offline. Showing cached/snapshot data.', dismissible: true };
+  if (err instanceof NetworkError) return { level: 'error', text: 'You appear to be offline. Showing pre-fetched WITS data.', dismissible: true };
   if (err instanceof SchemaValidationError) return { level: 'warn', text: err.uiMessage, dismissible: true };
   if (err instanceof PayloadTooLargeError) return { level: 'info', text: err.uiMessage, dismissible: true };
   return { level: 'error', text: err.message || 'An unexpected error occurred.', dismissible: true };

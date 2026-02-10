@@ -179,7 +179,7 @@ export function renderTariffChart(tariffData) {
       series: [],
     }, true);
     document.getElementById('tariff-status')?.insertAdjacentHTML('beforeend',
-      '<p class="info-box">Tariff indicators were not available from the WITS API at the time of this snapshot. Enable live refresh or provide tariff data manually.</p>');
+      '<p class="info-box">Tariff indicators are not available from the configured sources. Enable live refresh or provide tariff data manually.</p>');
     return;
   }
 

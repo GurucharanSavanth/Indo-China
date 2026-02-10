@@ -34,7 +34,7 @@ import { WORLDBANK } from './config/endpoints.js';
 async function init() {
   await loadLocalConfig();
 
-  // Load snapshot data first for instant display
+  // Load WITS trade data first for instant display
   await loadSnapshots();
 
   // Render initial UI
@@ -62,21 +62,22 @@ async function init() {
 // ── Snapshot loading ─────────────────────────────────────────
 async function loadSnapshots() {
   try {
-    const [tradeResp, compResp, gdpResp, fxResp] = await Promise.allSettled([
+    const [tradeResp, compResp, gdpResp, fxResp, tariffResp] = await Promise.allSettled([
       fetch('./assets/data/processed/trade_annual.json').then(r => r.json()),
       fetch('./assets/data/processed/trade_composition.json').then(r => r.json()),
       fetch('./assets/data/processed/macro_gdp.json').then(r => r.json()),
       fetch('./assets/data/processed/fx_series.json').then(r => r.json()),
+      fetch('./assets/data/processed/tariff_indicators.json').then(r => r.json()),
     ]);
 
     const tradeFacts = tradeResp.status === 'fulfilled' ? (tradeResp.value.data || []) : [];
     const compFacts = compResp.status === 'fulfilled' ? (compResp.value.data || []) : [];
     const gdpFacts = gdpResp.status === 'fulfilled' ? (gdpResp.value.data || []) : [];
     const fxFacts = fxResp.status === 'fulfilled' ? (fxResp.value.data || []) : [];
+    const tariffFacts = tariffResp.status === 'fulfilled' ? (tariffResp.value.data || []) : [];
 
-    // Filter out rows with null values for clean snapshot display
     const validTrade = [...tradeFacts, ...compFacts].filter(r => r.value_usd !== null);
-    const validMacro = [...gdpFacts, ...fxFacts].filter(r => r.value !== null);
+    const validMacro = [...gdpFacts, ...fxFacts, ...tariffFacts].filter(r => r.value !== null);
 
     batchUpdate({
       tradeFacts: validTrade,
@@ -85,7 +86,7 @@ async function loadSnapshots() {
     });
 
     if (validMacro.length > 0 || validTrade.length > 0) {
-      addBanner({ level: 'info', text: `Loaded snapshot data (${validTrade.length} trade, ${validMacro.length} macro records). Live refresh starting...`, dismissible: true });
+      addBanner({ level: 'info', text: `Loaded WITS trade data (${validTrade.length} trade, ${validMacro.length} macro records). Live refresh starting...`, dismissible: true });
     }
   } catch (err) {
     logError(err);
@@ -119,7 +120,7 @@ async function attemptLiveRefresh() {
   if (anySuccess) {
     setState('ui.snapshotMode', false);
     // Clear the initial snapshot info banner
-    const banners = getState().ui.banners.filter(b => !b.text.includes('Loaded snapshot data'));
+    const banners = getState().ui.banners.filter(b => !b.text.includes('Loaded WITS trade data'));
     setState('ui.banners', banners);
   }
 
@@ -156,7 +157,7 @@ async function refreshTradeData() {
     // WITS returned no usable data — likely CORS or empty response
     addBanner({
       level: 'warn',
-      text: 'WITS trade data unavailable from browser (CORS). Using snapshot data for trade flows.',
+      text: 'WITS trade data unavailable from browser (CORS). Displaying pre-fetched WITS data for trade flows.',
       dismissible: true,
     });
     return false;
@@ -164,7 +165,7 @@ async function refreshTradeData() {
     logError(err);
     addBanner({
       level: 'warn',
-      text: 'WITS trade data unavailable (CORS/network). Using snapshot data.',
+      text: 'WITS trade data unavailable (CORS/network). Displaying pre-fetched WITS data.',
       dismissible: true,
     });
     return false;
@@ -273,7 +274,9 @@ function populateRoute(route) {
 }
 
 function populateOverview(filteredTrade, state) {
-  const yearly = aggregateByYear(filteredTrade);
+  // Filter to TOTAL-level rows only to prevent double-counting with composition GROUP rows
+  const totalTrade = filteredTrade.filter(r => r.product_level === 'TOTAL');
+  const yearly = aggregateByYear(totalTrade);
   const withYoY = computeYoY(yearly);
   const balance = computeBalance(yearly);
 
@@ -309,9 +312,9 @@ function populateOverview(filteredTrade, state) {
   renderProvenance('overview-provenance', {
     source: 'WITS TradeStats',
     dataset: 'tradestats-trade',
-    retrieval_ts: state.ui.snapshotMode ? 'Snapshot' : new Date().toISOString(),
+    retrieval_ts: totalTrade.length > 0 ? totalTrade[0].retrieval_ts : new Date().toISOString(),
     url: 'https://wits.worldbank.org/API/V1/SDMX/V21/datasource/tradestats-trade/reporter/IND/year/all/partner/CHN/product/999999/indicator/all?format=JSON',
-    note: filteredTrade.length === 0 ? 'No trade data available. WITS API may be blocked by CORS.' : '',
+    note: totalTrade.length === 0 ? 'No trade data available. WITS API may be blocked by CORS.' : '',
   });
 
   wireExportButtons();
@@ -332,24 +335,60 @@ function populateComposition(filteredTrade, state) {
     renderConcentrationMetrics({ hhi: null, top5: null, entropy: null });
   }
 
-  renderRankShiftChart([]);
+  // Compute rank shift from ALL years of composition data (not just filtered year range)
+  const allCompositionRows = state.tradeFacts.filter(
+    r => r.product_level !== 'TOTAL' && r.flow === state.filters.flow
+  );
+  const rankData = computeProductRankings(allCompositionRows);
+  renderRankShiftChart(rankData);
 
   renderProvenance('comp-provenance', {
     source: isComtradeAvailable() ? 'UN Comtrade' : 'WITS TradeStats',
     dataset: 'product groups',
-    retrieval_ts: state.ui.snapshotMode ? 'Snapshot' : new Date().toISOString(),
+    retrieval_ts: productData.length > 0 ? productData[0].retrieval_ts : new Date().toISOString(),
+    file: 'trade_composition.json',
   });
 }
 
+function computeProductRankings(productRows) {
+  const byYear = {};
+  for (const r of productRows) {
+    if (!byYear[r.date]) byYear[r.date] = [];
+    byYear[r.date].push(r);
+  }
+
+  const ranksByProduct = {};
+  for (const [year, rows] of Object.entries(byYear)) {
+    const sorted = [...rows].sort((a, b) => (b.value_usd || 0) - (a.value_usd || 0));
+    sorted.forEach((row, idx) => {
+      const key = row.product_code;
+      if (!ranksByProduct[key]) {
+        ranksByProduct[key] = { product_name: row.product_name, product_code: key, rankings: [] };
+      }
+      ranksByProduct[key].rankings.push({ year: row.date, rank: idx + 1 });
+    });
+  }
+
+  return Object.values(ranksByProduct)
+    .filter(p => p.rankings.length >= 2)
+    .sort((a, b) => {
+      const avgA = a.rankings.reduce((s, r) => s + r.rank, 0) / a.rankings.length;
+      const avgB = b.rankings.reduce((s, r) => s + r.rank, 0) / b.rankings.length;
+      return avgA - avgB;
+    })
+    .slice(0, 10);
+}
+
 function populateTariffs(state) {
-  const tariffData = state.tradeFacts.filter(r =>
+  const tariffData = state.macroFacts.filter(r =>
     r.source_id && r.source_id.includes('tariff')
   );
   renderTariffChart(tariffData);
   renderProvenance('tariff-provenance', {
-    source: 'WITS TradeStats',
+    source: 'WITS TradeStats-Tariff',
     dataset: 'tradestats-tariff',
-    retrieval_ts: state.ui.snapshotMode ? 'Snapshot' : new Date().toISOString(),
+    retrieval_ts: tariffData.length > 0 ? tariffData[0].retrieval_ts : new Date().toISOString(),
+    file: 'tariff_indicators.json',
     note: tariffData.length === 0 ? 'No tariff data available from configured sources.' : '',
   });
 }
@@ -365,7 +404,7 @@ function populateMacro(state) {
   renderProvenance('gdp-provenance', {
     source: 'World Bank',
     dataset: 'NY.GDP.MKTP.CD',
-    retrieval_ts: state.ui.snapshotMode ? 'Snapshot' : new Date().toISOString(),
+    retrieval_ts: gdpData.length > 0 ? gdpData[0].retrieval_ts : new Date().toISOString(),
     url: 'https://api.worldbank.org/v2/country/IND;CHN/indicator/NY.GDP.MKTP.CD?format=json',
   });
 
@@ -385,7 +424,7 @@ function setupCorrelationExplorer() {
     const currentState = getState();
     const macroData = currentState.macroFacts;
     const fxAnnual = annualiseFX(macroData.filter(r => r.indicator_code === 'FX_USD_INR'));
-    const tradeYearly = aggregateByYear(currentState.tradeFacts.filter(r => r.flow === 'EXPORT'));
+    const tradeYearly = aggregateByYear(currentState.tradeFacts.filter(r => r.flow === 'EXPORT' && r.product_level === 'TOTAL'));
 
     const xData = [], yData = [];
     for (const t of tradeYearly) {
@@ -405,7 +444,9 @@ function setupCorrelationExplorer() {
 }
 
 function populateForecast(filteredTrade, state) {
-  const yearly = aggregateByYear(filteredTrade);
+  // Filter to TOTAL-level rows only to prevent double-counting with composition GROUP rows
+  const totalTrade = filteredTrade.filter(r => r.product_level === 'TOTAL');
+  const yearly = aggregateByYear(totalTrade);
   const exportSeries = yearly
     .filter(r => r.flow === state.filters.flow)
     .sort((a, b) => a.date.localeCompare(b.date));

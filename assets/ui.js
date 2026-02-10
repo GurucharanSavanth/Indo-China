@@ -301,7 +301,7 @@ function renderMethods(el) {
       <h3>Limitations</h3>
       <ul>
         <li>WITS API limits: max 2 dimensions as ALL; reporter+partner both ALL not permitted.</li>
-        <li>CORS restrictions may prevent live refresh from some browsers; snapshot fallback used.</li>
+        <li>CORS restrictions may prevent live refresh from some browsers; pre-fetched WITS data is displayed in that case.</li>
         <li>Exchange rates are ECB reference rates (mid-market), not transaction rates.</li>
         <li>Correlation ≠ causation — macro correlations are exploratory, not causal.</li>
       </ul>

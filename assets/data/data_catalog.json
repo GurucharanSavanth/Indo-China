@@ -16,12 +16,12 @@
     {
       "id": "snapshot-ind-chn-composition",
       "source_id": "wits",
-      "retrieval_ts": "2025-01-15T00:00:00Z",
+      "retrieval_ts": "2026-02-10T12:09:44.633Z",
       "request_url_or_file": "assets/data/processed/trade_composition.json",
       "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
       "schema_version": "1.0.0",
-      "coverage": "India-China trade by product group, 2023",
-      "notes": "Product groups from WITS SITC/sector classification.",
+      "coverage": "India-China trade by product group, 2019-2023",
+      "notes": "Product groups (HS2 sections) from WITS TradeStats. Multi-year for rank-shift analysis.",
       "status": "ok"
     },
     {
@@ -44,6 +44,17 @@
       "schema_version": "1.0.0",
       "coverage": "USD/INR and USD/CNY annual average exchange rates, 2000-2024",
       "notes": "Frankfurter API (ECB reference rates). Daily rates averaged to annual.",
+      "status": "ok"
+    },
+    {
+      "id": "wits-ind-chn-tariff-indicators",
+      "source_id": "wits:tradestats-tariff",
+      "retrieval_ts": "2026-02-10T12:09:44.633Z",
+      "request_url_or_file": "assets/data/processed/tariff_indicators.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "schema_version": "1.0.0",
+      "coverage": "India-China bilateral tariff indicators, 2010-2023",
+      "notes": "Applied and MFN tariff weighted averages from WITS TRAINS database. Values in percent.",
       "status": "ok"
     }
   ]
