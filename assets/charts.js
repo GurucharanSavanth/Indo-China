@@ -361,11 +361,11 @@ export function renderRegressionChart(actual, fitted, labels) {
   if (!chart) return;
 
   chart.setOption({
-    tooltip: { trigger: 'axis' },
+    tooltip: { trigger: 'axis', valueFormatter: v => v !== null ? '$' + (v / 1e9).toFixed(2) + 'B' : 'N/A' },
     legend: { data: ['Actual', 'Fitted (Model)'] },
     grid: { left: 80, right: 30, bottom: 40 },
     xAxis: { type: 'category', data: labels },
-    yAxis: { type: 'value', name: 'USD' },
+    yAxis: { type: 'value', name: 'USD', axisLabel: { formatter: v => (v / 1e9).toFixed(1) + 'B' } },
     series: [
       { name: 'Actual', type: 'line', data: actual, itemStyle: { color: '#2563eb' } },
       { name: 'Fitted (Model)', type: 'line', data: fitted, lineStyle: { type: 'dashed' }, itemStyle: { color: '#f97316' } },

@@ -172,36 +172,47 @@ async function refreshTradeData() {
 }
 
 async function refreshMacroData() {
-  const [indGDP, chnGDP] = await Promise.all([
-    fetchIndicator('IND', WORLDBANK.INDICATORS.GDP_CURRENT_USD, { date: '2000:2024' }),
-    fetchIndicator('CHN', WORLDBANK.INDICATORS.GDP_CURRENT_USD, { date: '2000:2024' }),
-  ]);
+  try {
+    const [indGDP, chnGDP] = await Promise.all([
+      fetchIndicator('IND', WORLDBANK.INDICATORS.GDP_CURRENT_USD, { date: '2000:2024' }),
+      fetchIndicator('CHN', WORLDBANK.INDICATORS.GDP_CURRENT_USD, { date: '2000:2024' }),
+    ]);
 
-  const gdpRows = [
-    ...normaliseWBIndicator(indGDP, WORLDBANK.INDICATORS.GDP_CURRENT_USD),
-    ...normaliseWBIndicator(chnGDP, WORLDBANK.INDICATORS.GDP_CURRENT_USD),
-  ];
+    const gdpRows = [
+      ...normaliseWBIndicator(indGDP, WORLDBANK.INDICATORS.GDP_CURRENT_USD),
+      ...normaliseWBIndicator(chnGDP, WORLDBANK.INDICATORS.GDP_CURRENT_USD),
+    ];
 
-  if (gdpRows.length > 0) {
-    const { valid } = validateBatch(gdpRows, 'macro_fact');
-    const existing = getState().macroFacts.filter(r => r.source_id !== 'worldbank');
-    setState('macroFacts', [...existing, ...valid]);
-    return true;
+    if (gdpRows.length > 0) {
+      const { valid } = validateBatch(gdpRows, 'macro_fact');
+      const existing = getState().macroFacts.filter(r => r.source_id !== 'worldbank');
+      setState('macroFacts', [...existing, ...valid]);
+      return true;
+    }
+    // World Bank returned no data — CORS likely blocked from this origin
+    return false;
+  } catch (err) {
+    logError(err);
+    return false;
   }
-  return false;
 }
 
 async function refreshFXData() {
-  const fxSeries = await fetchFXSeries('2000-01-03', '2024-12-31');
-  if (fxSeries) {
-    const fxRows = normaliseFXSeries(fxSeries);
-    if (fxRows.length > 0) {
-      const existing = getState().macroFacts.filter(r => r.source_id !== 'frankfurter');
-      setState('macroFacts', [...existing, ...fxRows]);
-      return true;
+  try {
+    const fxSeries = await fetchFXSeries('2005-01-03', '2024-12-31');
+    if (fxSeries) {
+      const fxRows = normaliseFXSeries(fxSeries);
+      if (fxRows.length > 0) {
+        const existing = getState().macroFacts.filter(r => r.source_id !== 'frankfurter');
+        setState('macroFacts', [...existing, ...fxRows]);
+        return true;
+      }
     }
+    return false;
+  } catch (err) {
+    logError(err);
+    return false;
   }
-  return false;
 }
 
 // ── Route change handler ─────────────────────────────────────
@@ -269,8 +280,9 @@ function populateOverview(filteredTrade, state) {
   renderOverviewChart(yearly);
   renderBalanceChart(balance);
 
-  // KPIs from latest available year
-  const latestYear = String(state.filters.yearEnd);
+  // KPIs from latest available year in actual data (not filter yearEnd which may exceed data range)
+  const availableYears = [...new Set(yearly.map(r => r.date))].sort();
+  const latestYear = availableYears.length > 0 ? availableYears[availableYears.length - 1] : String(state.filters.yearEnd);
   const latestExport = withYoY.find(r => r.date === latestYear && r.flow === 'EXPORT');
   const latestImport = withYoY.find(r => r.date === latestYear && r.flow === 'IMPORT');
   const latestBalance = balance.find(r => r.date === latestYear);
@@ -440,7 +452,9 @@ function populateForecast(filteredTrade, state) {
     }
 
     if (msg.type === 'regression_result') {
-      renderRegressionChart(msg.fitted.map((_, i) => msg.fitted[i]), msg.fitted, msg.predictorLabels || []);
+      const actual = worker._regressionActual || msg.fitted;
+      const yearLabels = worker._regressionYears || [];
+      renderRegressionChart(actual, msg.fitted, yearLabels);
       worker.terminate();
     }
 
@@ -464,7 +478,7 @@ function runRegressionOnWorker(worker, years, tradeValues) {
   const fxAnnual = annualiseFX(macroData.filter(r => r.indicator_code === 'FX_USD_INR'));
   const gdpData = macroData.filter(r => r.country_iso3 === 'IND' && r.indicator_code === 'NY.GDP.MKTP.CD');
 
-  const y = [], X = [], labels = [];
+  const y = [], X = [], yearLabels = [];
   for (let i = 0; i < years.length; i++) {
     const yr = years[i];
     const tv = tradeValues[i];
@@ -477,11 +491,14 @@ function runRegressionOnWorker(worker, years, tradeValues) {
     if (fx && gdp && gdp.value !== null) {
       y.push(tv);
       X.push([fx.value, gdp.value]);
-      labels.push(yr);
+      yearLabels.push(yr);
     }
   }
 
   if (y.length >= 3) {
+    // Store y and yearLabels for use in onmessage handler
+    worker._regressionActual = y;
+    worker._regressionYears = yearLabels;
     worker.postMessage({ type: 'regression', y, X, labels: ['lag(USD/INR)', 'GDP_IND'] });
   } else {
     worker.terminate();

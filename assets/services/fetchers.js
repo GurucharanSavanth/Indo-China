@@ -56,7 +56,9 @@ export async function robustFetch(url, opts = {}) {
       }
 
       if (!resp.ok) {
-        throw new NetworkError(`HTTP ${resp.status} from ${url}`, { source: new URL(url).hostname });
+        // 4xx errors (except 429) are client errors — never retry
+        const err = new NetworkError(`HTTP ${resp.status} from ${url}`, { source: new URL(url).hostname, retryable: false });
+        throw err;
       }
 
       // Payload size guard
@@ -92,6 +94,8 @@ export async function robustFetch(url, opts = {}) {
       }
       if (err instanceof AppError) {
         lastErr = err;
+        // Don't retry non-retryable errors (4xx, etc.)
+        if (err.retryable === false) throw err;
       } else {
         lastErr = new NetworkError(err.message, { source: url });
         logError(lastErr);
