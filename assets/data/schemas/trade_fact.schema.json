@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "trade_fact.schema.json",
+  "title": "Trade Fact",
+  "type": "object",
+  "required": ["date","frequency","reporter_iso3","partner_iso3","flow","product_level","product_code","value_usd","source_id","retrieval_ts","request_fingerprint"],
+  "properties": {
+    "date": { "type": "string", "description": "YYYY or YYYY-MM" },
+    "frequency": { "type": "string", "enum": ["A","M"] },
+    "reporter_iso3": { "type": "string", "minLength": 3, "maxLength": 3 },
+    "partner_iso3": { "type": "string", "minLength": 3, "maxLength": 3 },
+    "flow": { "type": "string", "enum": ["IMPORT","EXPORT"] },
+    "product_level": { "type": "string", "enum": ["TOTAL","GROUP","HS2","HS4"] },
+    "product_code": { "type": "string" },
+    "product_name": { "type": "string" },
+    "value_usd": { "type": ["number","null"] },
+    "unit": { "type": "string", "default": "USD" },
+    "source_id": { "type": "string" },
+    "retrieval_ts": { "type": "string", "format": "date-time" },
+    "request_fingerprint": { "type": "string" }
+  },
+  "additionalProperties": false
+}

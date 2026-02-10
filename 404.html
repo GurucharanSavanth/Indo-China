@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India–China Trade Dashboard</title>
+  <script>
+    // GitHub Pages SPA redirect: convert path to hash route
+    const path = location.pathname.replace(/^\/[^/]+/, '');
+    if (path && path !== '/') {
+      location.replace(location.origin + location.pathname.split('/').slice(0, -1).join('/') + '/#' + path);
+    } else {
+      location.replace(location.origin + location.pathname.replace(/\/[^/]*$/, '/'));
+    }
+  </script>
+</head>
+<body></body>
+</html>

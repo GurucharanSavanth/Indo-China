@@ -1,0 +1,21 @@
+# Local config (may contain API keys)
+assets/config/local.js
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node (dev tools only)
+node_modules/
+package-lock.json
+
+# Temp/processing scripts
+_*.js

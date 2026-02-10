@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "generated": "2025-01-15T00:00:00Z",
+  "entries": [
+    {
+      "id": "snapshot-ind-chn-trade-annual",
+      "source_id": "wits",
+      "retrieval_ts": "2025-01-15T00:00:00Z",
+      "request_url_or_file": "assets/data/processed/trade_annual.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "schema_version": "1.0.0",
+      "coverage": "India-China bilateral trade totals, 2000-2023, annual",
+      "notes": "Offline snapshot compiled from WITS TradeStats. Values in current USD.",
+      "status": "ok"
+    },
+    {
+      "id": "snapshot-ind-chn-composition",
+      "source_id": "wits",
+      "retrieval_ts": "2025-01-15T00:00:00Z",
+      "request_url_or_file": "assets/data/processed/trade_composition.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "schema_version": "1.0.0",
+      "coverage": "India-China trade by product group, 2023",
+      "notes": "Product groups from WITS SITC/sector classification.",
+      "status": "ok"
+    },
+    {
+      "id": "snapshot-gdp-ind-chn",
+      "source_id": "worldbank",
+      "retrieval_ts": "2025-01-15T00:00:00Z",
+      "request_url_or_file": "assets/data/processed/macro_gdp.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "schema_version": "1.0.0",
+      "coverage": "GDP current USD for India and China, 2000-2023",
+      "notes": "World Bank Indicator NY.GDP.MKTP.CD.",
+      "status": "ok"
+    },
+    {
+      "id": "snapshot-fx-usd-inr-cny",
+      "source_id": "frankfurter",
+      "retrieval_ts": "2025-01-15T00:00:00Z",
+      "request_url_or_file": "assets/data/processed/fx_series.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "schema_version": "1.0.0",
+      "coverage": "USD/INR and USD/CNY annual average exchange rates, 2000-2024",
+      "notes": "Frankfurter API (ECB reference rates). Daily rates averaged to annual.",
+      "status": "ok"
+    }
+  ]
+}

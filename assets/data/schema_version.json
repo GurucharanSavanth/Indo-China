@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "schemas": {
+    "trade_fact": "trade_fact.schema.json",
+    "macro_fact": "macro_fact.schema.json",
+    "catalog": "catalog.schema.json"
+  },
+  "updated": "2025-01-15T00:00:00Z"
+}

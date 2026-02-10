@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "catalog.schema.json",
+  "title": "Data Catalog Entry",
+  "type": "object",
+  "required": ["id","source_id","retrieval_ts","request_url_or_file","sha256","schema_version","coverage","status"],
+  "properties": {
+    "id": { "type": "string" },
+    "source_id": { "type": "string", "description": "E.g. wits, worldbank, frankfurter, comtrade" },
+    "retrieval_ts": { "type": "string", "format": "date-time" },
+    "request_url_or_file": { "type": "string" },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "schema_version": { "type": "string" },
+    "coverage": { "type": "string", "description": "Human-readable coverage note" },
+    "notes": { "type": "string" },
+    "status": { "type": "string", "enum": ["ok","failed"] },
+    "error": { "type": "string" }
+  },
+  "additionalProperties": false
+}

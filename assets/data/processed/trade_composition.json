@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "description": "India-China trade composition by product group. Source: WITS TradeStats product groups.",
+    "reporter": "IND",
+    "partner": "CHN",
+    "year": "2023",
+    "retrieval_ts": "2025-01-15T00:00:00Z",
+    "note": "Data unavailable from live API at snapshot time; structure provided as template. Dashboard will attempt live refresh."
+  },
+  "data": []
+}

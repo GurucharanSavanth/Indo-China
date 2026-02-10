@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India–China Trade Dashboard</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <!-- ECharts via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <h1>India–China Trade Dashboard</h1>
+    <nav>
+      <a class="nav-link active" href="#/overview">Overview</a>
+      <a class="nav-link" href="#/composition">Composition</a>
+      <a class="nav-link" href="#/tariffs">Tariffs</a>
+      <a class="nav-link" href="#/macro">Macro</a>
+      <a class="nav-link" href="#/forecast">Forecast</a>
+      <a class="nav-link" href="#/methods">Methods</a>
+    </nav>
+  </header>
+
+  <div id="banner-area"></div>
+
+  <div class="app-body">
+    <div id="filter-bar"></div>
+    <main id="main-content"></main>
+  </div>
+
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <span>Loading...</span>
+  </div>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
