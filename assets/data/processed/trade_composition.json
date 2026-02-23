@@ -4,7 +4,7 @@
     "reporter": "IND",
     "partner": "CHN",
     "coverage": "2019-2023",
-    "retrieval_ts": "2026-02-16T07:07:36.086Z",
+    "retrieval_ts": "2026-02-23T07:08:39.617Z",
     "source_url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/tradestats-trade/reporter/IND/year/{YEAR}/partner/CHN/product/all/indicator/XPRT-TRD-VL;MPRT-TRD-VL?format=JSON",
     "record_count": 100,
     "note": "Product group level (HS2 sections). Excludes TOTAL aggregates."
@@ -22,7 +22,7 @@
       "value_usd": 2840000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -37,7 +37,7 @@
       "value_usd": 3190000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -52,7 +52,7 @@
       "value_usd": 4520000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -67,7 +67,7 @@
       "value_usd": 910000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -82,7 +82,7 @@
       "value_usd": 780000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -97,7 +97,7 @@
       "value_usd": 1260000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -112,7 +112,7 @@
       "value_usd": 630000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -127,7 +127,7 @@
       "value_usd": 540000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -142,7 +142,7 @@
       "value_usd": 470000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -157,7 +157,7 @@
       "value_usd": 380000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2019"
     },
     {
@@ -172,7 +172,7 @@
       "value_usd": 7850000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -187,7 +187,7 @@
       "value_usd": 2610000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -202,7 +202,7 @@
       "value_usd": 1420000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -217,7 +217,7 @@
       "value_usd": 680000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -232,7 +232,7 @@
       "value_usd": 1030000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -247,7 +247,7 @@
       "value_usd": 690000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -262,7 +262,7 @@
       "value_usd": 1310000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -277,7 +277,7 @@
       "value_usd": 410000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -292,7 +292,7 @@
       "value_usd": 480000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -307,7 +307,7 @@
       "value_usd": 340000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2020"
     },
     {
@@ -322,7 +322,7 @@
       "value_usd": 7240000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -337,7 +337,7 @@
       "value_usd": 4100000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -352,7 +352,7 @@
       "value_usd": 3510000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -367,7 +367,7 @@
       "value_usd": 3870000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -382,7 +382,7 @@
       "value_usd": 1310000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -397,7 +397,7 @@
       "value_usd": 1420000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -412,7 +412,7 @@
       "value_usd": 960000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -427,7 +427,7 @@
       "value_usd": 550000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -442,7 +442,7 @@
       "value_usd": 680000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -457,7 +457,7 @@
       "value_usd": 490000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2021"
     },
     {
@@ -472,7 +472,7 @@
       "value_usd": 4210000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -487,7 +487,7 @@
       "value_usd": 3550000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -502,7 +502,7 @@
       "value_usd": 4870000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -517,7 +517,7 @@
       "value_usd": 2040000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -532,7 +532,7 @@
       "value_usd": 1580000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -547,7 +547,7 @@
       "value_usd": 1120000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -562,7 +562,7 @@
       "value_usd": 810000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -577,7 +577,7 @@
       "value_usd": 630000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -592,7 +592,7 @@
       "value_usd": 590000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -607,7 +607,7 @@
       "value_usd": 430000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2022"
     },
     {
@@ -622,7 +622,7 @@
       "value_usd": 2870000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -637,7 +637,7 @@
       "value_usd": 3250000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -652,7 +652,7 @@
       "value_usd": 3410000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -667,7 +667,7 @@
       "value_usd": 1380000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -682,7 +682,7 @@
       "value_usd": 1690000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -697,7 +697,7 @@
       "value_usd": 780000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -712,7 +712,7 @@
       "value_usd": 720000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -727,7 +727,7 @@
       "value_usd": 580000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -742,7 +742,7 @@
       "value_usd": 510000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -757,7 +757,7 @@
       "value_usd": 390000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:EXPORT:GROUP:2023"
     },
     {
@@ -772,7 +772,7 @@
       "value_usd": 20150000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -787,7 +787,7 @@
       "value_usd": 13280000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -802,7 +802,7 @@
       "value_usd": 9740000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -817,7 +817,7 @@
       "value_usd": 3210000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -832,7 +832,7 @@
       "value_usd": 2560000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -847,7 +847,7 @@
       "value_usd": 1870000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -862,7 +862,7 @@
       "value_usd": 2130000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -877,7 +877,7 @@
       "value_usd": 1450000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -892,7 +892,7 @@
       "value_usd": 1290000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -907,7 +907,7 @@
       "value_usd": 1080000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2019"
     },
     {
@@ -922,7 +922,7 @@
       "value_usd": 21380000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -937,7 +937,7 @@
       "value_usd": 11960000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -952,7 +952,7 @@
       "value_usd": 8320000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -967,7 +967,7 @@
       "value_usd": 2870000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -982,7 +982,7 @@
       "value_usd": 2940000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -997,7 +997,7 @@
       "value_usd": 1720000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -1012,7 +1012,7 @@
       "value_usd": 2410000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -1027,7 +1027,7 @@
       "value_usd": 1310000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -1042,7 +1042,7 @@
       "value_usd": 1050000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -1057,7 +1057,7 @@
       "value_usd": 1250000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2020"
     },
     {
@@ -1072,7 +1072,7 @@
       "value_usd": 27890000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1087,7 +1087,7 @@
       "value_usd": 15340000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1102,7 +1102,7 @@
       "value_usd": 12470000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1117,7 +1117,7 @@
       "value_usd": 4120000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1132,7 +1132,7 @@
       "value_usd": 5830000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1147,7 +1147,7 @@
       "value_usd": 3540000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1162,7 +1162,7 @@
       "value_usd": 2780000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1177,7 +1177,7 @@
       "value_usd": 1860000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1192,7 +1192,7 @@
       "value_usd": 1470000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1207,7 +1207,7 @@
       "value_usd": 1530000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2021"
     },
     {
@@ -1222,7 +1222,7 @@
       "value_usd": 31240000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1237,7 +1237,7 @@
       "value_usd": 17680000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1252,7 +1252,7 @@
       "value_usd": 13520000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1267,7 +1267,7 @@
       "value_usd": 4560000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1282,7 +1282,7 @@
       "value_usd": 4210000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1297,7 +1297,7 @@
       "value_usd": 5180000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1312,7 +1312,7 @@
       "value_usd": 3040000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1327,7 +1327,7 @@
       "value_usd": 2150000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1342,7 +1342,7 @@
       "value_usd": 1680000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1357,7 +1357,7 @@
       "value_usd": 1740000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2022"
     },
     {
@@ -1372,7 +1372,7 @@
       "value_usd": 36780000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1387,7 +1387,7 @@
       "value_usd": 20410000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1402,7 +1402,7 @@
       "value_usd": 14890000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1417,7 +1417,7 @@
       "value_usd": 5340000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1432,7 +1432,7 @@
       "value_usd": 4870000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1447,7 +1447,7 @@
       "value_usd": 4620000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1462,7 +1462,7 @@
       "value_usd": 3510000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1477,7 +1477,7 @@
       "value_usd": 2480000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1492,7 +1492,7 @@
       "value_usd": 2110000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     },
     {
@@ -1507,7 +1507,7 @@
       "value_usd": 1960000000,
       "unit": "USD",
       "source_id": "wits:tradestats-trade",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:IND:CHN:IMPORT:GROUP:2023"
     }
   ]

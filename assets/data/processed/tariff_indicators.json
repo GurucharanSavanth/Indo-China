@@ -4,7 +4,7 @@
     "reporter": "IND",
     "partner": "CHN",
     "coverage": "2010-2023",
-    "retrieval_ts": "2026-02-16T07:07:36.086Z",
+    "retrieval_ts": "2026-02-23T07:08:39.617Z",
     "source_url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/tradestats-tariff/reporter/IND/year/{YEAR}/partner/CHN/product/all/indicator/AHS-WGHTD-AVRG;MFN-WGHTD-AVRG?format=JSON",
     "record_count": 28,
     "note": "Applied and MFN tariff weighted averages. Values in percent."
@@ -18,7 +18,7 @@
       "value": 8.9,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2010"
     },
     {
@@ -29,7 +29,7 @@
       "value": 9.1,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2011"
     },
     {
@@ -40,7 +40,7 @@
       "value": 9.3,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2012"
     },
     {
@@ -51,7 +51,7 @@
       "value": 9.2,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2013"
     },
     {
@@ -62,7 +62,7 @@
       "value": 9.3,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2014"
     },
     {
@@ -73,7 +73,7 @@
       "value": 9.4,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2015"
     },
     {
@@ -84,7 +84,7 @@
       "value": 9.5,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2016"
     },
     {
@@ -95,7 +95,7 @@
       "value": 9.8,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2017"
     },
     {
@@ -106,7 +106,7 @@
       "value": 10.4,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2018"
     },
     {
@@ -117,7 +117,7 @@
       "value": 11,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2019"
     },
     {
@@ -128,7 +128,7 @@
       "value": 11.2,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2020"
     },
     {
@@ -139,7 +139,7 @@
       "value": 11.8,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2021"
     },
     {
@@ -150,7 +150,7 @@
       "value": 12.5,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2022"
     },
     {
@@ -161,7 +161,7 @@
       "value": 13.2,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:AHS:2023"
     },
     {
@@ -172,7 +172,7 @@
       "value": 10.2,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2010"
     },
     {
@@ -183,7 +183,7 @@
       "value": 10.4,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2011"
     },
     {
@@ -194,7 +194,7 @@
       "value": 10.5,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2012"
     },
     {
@@ -205,7 +205,7 @@
       "value": 10.3,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2013"
     },
     {
@@ -216,7 +216,7 @@
       "value": 10.5,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2014"
     },
     {
@@ -227,7 +227,7 @@
       "value": 10.6,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2015"
     },
     {
@@ -238,7 +238,7 @@
       "value": 10.7,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2016"
     },
     {
@@ -249,7 +249,7 @@
       "value": 10.9,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2017"
     },
     {
@@ -260,7 +260,7 @@
       "value": 11.1,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2018"
     },
     {
@@ -271,7 +271,7 @@
       "value": 11,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2019"
     },
     {
@@ -282,7 +282,7 @@
       "value": 11.1,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2020"
     },
     {
@@ -293,7 +293,7 @@
       "value": 11.5,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2021"
     },
     {
@@ -304,7 +304,7 @@
       "value": 11.9,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2022"
     },
     {
@@ -315,7 +315,7 @@
       "value": 12.3,
       "unit": "%",
       "source_id": "wits:tradestats-tariff",
-      "retrieval_ts": "2026-02-16T07:07:36.086Z",
+      "retrieval_ts": "2026-02-23T07:08:39.617Z",
       "request_fingerprint": "wits:tariff:IND:CHN:MFN:2023"
     }
   ]
